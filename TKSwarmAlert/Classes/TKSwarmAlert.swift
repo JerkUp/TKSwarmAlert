@@ -42,11 +42,11 @@ open class TKSwarmAlert: NSObject {
         self.staticViews.append(view)
     }
     
-    public func hide(){
+    @objc public func hide(){
         self.animationView?.onTapSuperView()
     }
     
-    public func show(_ views:[UIView]) {
+    @objc public func show(_ views:[UIView]) {
         let window:UIWindow? = UIApplication.shared.keyWindow
         if window != nil {
             let frame:CGRect = window!.bounds
@@ -97,7 +97,7 @@ open class TKSwarmAlert: NSObject {
         }
     }
     
-    public func spawn(_ views:[UIView]) {
+    @objc public func spawn(_ views:[UIView]) {
         self.animationView?.spawn(views: views)
     }
 }
