@@ -13,7 +13,7 @@ public typealias Closure=()->Void
 open class TKSwarmAlert: NSObject {
     
     open var durationOfPreventingTapBackgroundArea: TimeInterval = 0
-    open var didDissmissAllViews: Closure?
+    @objc open var didDissmissAllViews: Closure?
     
     open var fadeOutDuration: TimeInterval = 0.2
     
